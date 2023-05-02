@@ -10,9 +10,9 @@ BEGIN
                 BEGIN
                     IF (arr[i]>arr[i+1]) THEN
                      begin
-                     temp:=tableau (i);
-                     tableau(i):=tableau(i+1);
-                     tableau(i+1) := temp;
+                     temp:=arr (i);
+                     arr(i):=arr(i+1);
+                     arr(i+1) := temp;
                      permutation :=true;
                       END_IF;
                 END;
