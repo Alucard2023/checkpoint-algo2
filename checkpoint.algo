@@ -3,20 +3,20 @@ VAR
 permutation:BOOLEAN;
 i,temp,passage: INTEGER;
 BEGIN
-    passage:=1;
+    
     REPEAT
             permutation:=false;
             for i := 0 to (arr.lenght-1) DO
                 BEGIN
                     IF (arr[i]>arr[i+1]) THEN
                      begin
-                     temp:=arr (i);
-                     arr(i):=arr(i+1);
-                     arr(i+1) := temp;
-                     permutation :=true;
+                     temp:= arr[i];
+                     arr[i]:= arr[i+1];
+                     arr[i+1] := temp;
+                     permutation := true;
                       END_IF;
                 END;
-                passage:=passage+1;
+               
     UNTIL (permutation=false);
 END;
 
